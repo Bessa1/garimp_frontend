@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+    <title>Blog-Garimp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+    <script src="garimp.js"></script>
+</head>
+
+<body>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <form id="form-login" class="modal-content">
+                <div id="step1" class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img src="garimpers.png" width="200px" height="100px">
+
+                    <div class="obrigatorio">
+                        <label for="CPF">CPF*</label>
+                        <input id="cpf" type="text" maxlength="11" minlength="11"
+                            onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+                            placeholder="---.---.---.--" />
+
+                        <label for="nome">Nome*</label>
+                        <input id="firstname" type="text" placeholder="Digite seu nome" />
+                        <label for="sobrenome">Sobrenome*</label>
+                        <input id="lastname" type="text" placeholder="Digite seu sobrenome" />
+
+                    </div>
+
+                    <div class="footer">
+                        <button type="button" onclick="goToStep2()" id="continueStep1">Continuar</button>
+                    </div>
+
+
+                </div>
+                <div id="step2" class="modal-body" style="display: none;">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img src="garimpers.png" width="200px" height="100px">
+
+                    <div class="obrigatorio">
+                        <label for="email">E-mail*</label>
+                        <input id="email"type="text" placeholder="Digite seu E-mail" />
+
+                        <label for="celular">Celular*</label>
+                        <input id="phone" type="text" maxlength="11" minlength="11"
+                            onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+                            placeholder="Digite seu número" />
+                        <label for="nascimento">Data de nascimento*</label>
+                        <input id="birthdate"type="text" placeholder="Digite sua data de nascimento" />
+
+                    </div>
+
+                    <div class="footer">
+                        <button type="button" onclick="backToStep1()" id="voltarStep2">Voltar</button>
+
+                        <button type="button" onclick="goToStep3()" id="continueStep2">Continuar</button>
+                    </div>
+
+
+
+                </div>
+
+                <div id="step3" class="modal-body" style="display: none;">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img src="garimpers.png" width="200px" height="100px">
+
+                    <div class="obrigatorio">
+                        <label for="senha">Senha*</label>
+                        <input id="password" type="text" placeholder="Digite uma senha" />
+                        <label for="confirmar">Confirmar senha*</label>
+                        <input id="confirm-password" type="text" placeholder="Confirme sua senha" />
+                        <div class="check">
+                            <input id="termos" type="checkbox" />
+                            <label class="termos" for="termos">*Li e aceito a política de privacidade e proteção da
+                                garimp</label>
+                        </div>
+
+                    </div>
+
+                    <div class="footer">
+
+                        <button type="button" onclick="backToStep2()" id="voltarStep3">Voltar</button>
+
+                        <button type="button" onclick="register()" id="finalizar">Finalizar</button>
+                        <p>Já tem uma conta? Faça Login</p>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </form>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <h2 class="logo">garimp</h2>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line2"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Moeda</a></li>
+                <li><a href="#">Coleções</a></li>
+                <li><a href="Login.html" data-bs-toggle="modal" data-bs-target="#exampleModal"><b>Log-in</b></a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main class="conteudo">
+
+
+        <!-- O Boulos ocpou essa linha -->
+        <section class="conteudo-principal">
+
+
+            <div class="text-container">
+                <div class="risco">
+                    <img class="" src="risco7.png">
+                </div>
+
+                <h2 class="text">Sobre nós</h2>
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="missao">
+                            <h1>missão</h1>
+                            <p>A nossa missão é desmistificar a ideia de que roupas usadas tem como destino o lixo.
+                                Prezamos pela restauração de peças descartadas pela população para então torná-las
+                                utilizáveis novamente. Tudo isso através de uma plataforma que impulsiona brechós
+                                locais.
+                            </p>
+                        </div>
+                        <img src="garimp1.jfif" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class="missao">
+                            <h1>visão</h1>
+                            <p>Ser uma plataforma de referência no Brasil, onde combatemos o desperdício e consumo
+                                excessivo da indústria têxtil. Desejamos mudar a visão que a população possui em relação
+                                aos brechós, resultando em maiores procuras nesses comércios.
+                            </p>
+                        </div>
+                        <img src="garimp2.jfif" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class="missao">
+                            <h1>valor</h1>
+                            <p>A <span>garimp</span> preza pela qualidade dos seus produtos e serviços, visando gerar
+                                satisfação ao cliente — além da segurança de que seus produtos são coletados e enviados.
+                            </p>
+                        </div>
+                        <img src="garimp3.jfif" class="d-block" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+        <section class="sobre-nos">
+            <h5>nossa empresa</h5>
+
+            <p>A <span>garimp</span> nasceu em 2022, com o objetivo de impulsionar as vendas dos brechós locais e trazer
+                a moda sustentável para a vida das pessoas de uma forma única e consciente. Como?<br>
+                Na nossa plataforma, o usuário vai conseguir trocar as suas roupas velhas por uma peça exclusiva, única,
+                totalmente costumizada! <br> Também temos um passe premium, que o usuário consegue adquirir com a nossa
+                moeda
+                virtual.<br>
+                Nossa empresa também tem o objetivo de movimentar o mercado financeiro.</p>
+        </section>
+
+        <div class="nossa-equipe">
+            <h1>nossa equipe</h1>
+        </div>
+
+
+        <section class="equipe">
+            <div class="membro">
+                <img src="yas.jfif" />
+                <span>Yasmin | P.O</span>
+            </div>
+            <div class="membro">
+                <img src="Isabelle.jfif" />
+                <span>Isabelle | Scrum Master</span>
+            </div>
+            <div class="membro">
+                <img src="felps.jfif" />
+                <span>Felipe | Web design</span>
+            </div>
+            <div class="membro">
+                <img src="gabs.jfif" />
+                <span>Gabriel | Back-End</span>
+            </div>
+            <div class="membro">
+                <img src="jv.jfif" />
+                <span>João | Front-End</span>
+            </div>
+            <div class="membro">
+                <img src="bessa.jfif" />
+                <span>Carlos | Fullstack</span>
+            </div>
+            <div class="membro">
+                <img src="melo.jfif" />
+                <span>Lucas | Back-End</span>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+
+        <div class="part1">
+            <h1 class="logo-footer">garimp</h1>
+            <h3>Sobre a garimp</h3>
+            <a href="#">Termo de uso</a>
+            <a href="#">Política de privacidade</a>
+        </div>
+
+        <div class="part2">
+            <h3>Nosso site</h3>
+            <a href="#">Metaverso</a>
+            <a href="#">Criptomoedas</a>
+            <a href="#">Novas Coleções</a>
+        </div>
+
+        <div class="part3">
+            <h3>Contato</h3>
+            <p>+55 59858587</p>
+            <p>garimp.future@gmail.com</p>
+            <p>FAQ</p>
+        </div>
+
+        <div class="part">
+            <img src="facebook.png" alt="">
+            <img src="instagram.png" alt="">
+            <img src="linkedin.png" alt="">
+        </div>
+
+
+    </footer>
+    <div class="part5">
+        <p>© 2022 Copyright: Garimp.com</p>
+    </div>
+
+
+</body>
+
+</html>

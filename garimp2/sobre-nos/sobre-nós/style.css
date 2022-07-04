@@ -1,0 +1,423 @@
+@font-face {
+    font-family: "Getaway";
+    src: url(getaway.otf);
+}
+
+@font-face {
+    font-family: "LaserMetal";
+    src: url(LaserMetal.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+.logo {
+    font-size: 24px;
+    color: #000;
+    margin-right: 50px;
+    font-family: getaway;
+    letter-spacing: 1px;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 80px;
+    font-family: -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f7f7f7;
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 1px;
+    margin-left: 32px;
+    
+}
+
+.risco {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+
+
+
+/*Boulos ocupou esta linha*/
+
+.risco:hover {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.carousel-item img{
+    width: 20%;
+    height: 20%;
+    margin-left: 70%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.missao{
+    width: 50%;
+    height: auto;
+    margin-top: 13%;
+    margin-left: 10%;
+    position: absolute;
+    z-index: 1000;
+    font-family: 'getaway';
+    letter-spacing: 3px;
+}
+
+.missao p{
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+.missao span{
+    font-family: 'getaway';
+}
+
+.carousel-item{
+    display: flex;
+    background-color: #EDECEC;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.conteudo {
+    position: relative;
+    width: 100%;
+    background: #F7F7F7;
+    margin-top: 2rem;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-principal {
+    color: black;
+    width: 100%;
+
+    /* Altura do BLOG, Se aumentar o numero ele desce */
+}
+
+.container-conteudos {
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+.conteudo-escrito h1 {
+    text-align: center;
+}
+
+.conteudo-escrito {
+    width: 30%;
+}
+
+.conteudo-escrito p {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.2em;
+}
+
+.conteudo-principal h2 {
+    font-family: "LaserMetal";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 140px;
+    line-height: 153px;
+    cursor: pointer;
+    color: black;
+
+}
+
+.imagem {
+    margin-top: 10px;
+}
+
+.imagem img {
+    max-width: 370px;
+    max-height: 410px;
+    min-width: 370px;
+    min-height: 400px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.sobre-nos {
+    
+    width: 74%;
+
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.sobre-nos h5 {
+    font-family: 'getaway';
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.sobre-nos p {
+    margin-top: 15px;
+    font-family:  -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+   
+}
+
+.sobre-nos span{
+    font-family: 'getaway';
+    font-weight: bold;
+}
+
+.nossa-equipe h1{
+    font-family: 'getaway';
+    font-size: 1.5rem;
+    width: 74%;
+    letter-spacing: 2px;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+footer {
+    background-color: #171616;
+    width: 100%;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #949292;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+
+
+
+.logo-footer {
+    margin-bottom: 40px;
+    font-family: getaway;
+    color: #fff;
+    font-weight: 100;
+    font-size: 60px;
+}
+
+
+.part1 {
+    margin-top: 25px;
+    margin-bottom: 140px;
+}
+
+.part1,
+.part2 {
+    color: #949292;
+    display: flex;
+    flex-direction: column;
+}
+
+.part1 h3,
+.part2 h3,
+.part3 h3 {
+    color: #fff;
+}
+
+.part1 a,
+.part2 a {
+    color: #949292;
+    padding: 10px;
+}
+
+.part2,
+.part3 {
+    margin-top: 30px;
+
+}
+
+.part3 {
+    display: flex;
+    width: 150px;
+    flex-direction: column;
+}
+
+.part3 p {
+    padding: 10px;
+}
+
+.part4 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 300px;
+    margin-right: 50px;
+}
+
+.part4 img {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.part5 {
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    background-color: #0B0B0B;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+}
+
+
+.equipe {
+    width: 85%;
+
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.membro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.membro img {
+    width: 250px;
+    border-radius: 2px;
+}
+
+.membro span{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* @keyframes shake{
+   25% {
+        transform:translateX(4px)
+   }
+   50% {
+       transform: translateX(-4px)
+   }
+   75% {
+       transform: translateX(6px)
+   }
+   
+} */
+
+/* @keyframes risco{
+    0%{
+        opacity:0.5;
+        
+    } 100% {
+        opacity: 1;
+        
+    }
+} */
+
+
+
+
+/* .conteudo-principal:hover{
+    
+    z-index: 1000;
+    margin-top: 60px;
+    margin-bottom: 100px 50px ;
+    position: absolute;
+   
+   
+    background-attachment: fixed;
+    transition: all 0.5s;
+    content: '';
+    
+} */
+
+@media (max-width:1120px) {
+    .risco{
+        top: 5%;
+    }
+}
+
+@media(max-width: 672px) {
+    .equipe {
+        width: 100%;
+    }
+    .risco{
+        top: 5%;
+    }
+    
+}
+
+@media(max-width: 568px) {
+    .membro img {
+        width: 200px;
+    }
+    .risco{
+        top: 5%;
+    }
+}
