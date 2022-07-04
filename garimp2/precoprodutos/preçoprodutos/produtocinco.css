@@ -1,0 +1,137 @@
+.produtoum img {
+    top: 103px;
+    left: 200px;
+    position: absolute;
+}
+
+.nomeum img {
+    top: 129px;
+    left: 852px;
+    position: absolute;
+}
+
+.camiseta h2 {
+    position: absolute;
+    width: 211px;
+    height: 71px;
+    left: 970px;
+    top: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+}
+
+
+.preço h1 {
+    position: absolute;
+width: 109px;
+height: 42px;
+left: 959px;
+top: 200px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 40px;
+line-height: 47px;
+
+color: #000000;
+}
+
+.preço h3 {
+    position: absolute;
+width: 57px;
+height: 24px;
+left: 1068px;
+top: 220px;
+
+font-family: 'Getaway';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #545454;
+
+}
+
+.cortam h2{
+    position: absolute;
+width: 142px;
+height: 28px;
+left: 850px;
+top: 260px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+
+}
+
+.cortam h3 {
+    position: absolute;
+width: 112px;
+height: 25px;
+left: 1070px;
+top: 255px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+}
+
+
+
+.corpreta img { 
+    position: absolute;
+width: 70px;
+height: 70px;
+left: 845px;
+top: 310px;
+
+}
+
+.corvermelha img { 
+    position: absolute;
+width: 70px;
+height: 70px;
+left: 924px;
+top: 310px;
+}
+
+.tamanho {
+    position: absolute;
+width: 25px;
+height: 47px;
+left: 1076px;
+top: 270px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 40px;
+line-height: 47px;
+}
+
+.button button {
+position: absolute;
+width: 345px;
+height: 95px;
+left: 831px;
+top: 500px;
+color: aliceblue;
+font-size: 25px;
+background: #262626;
+border-radius: 5px;
+}
